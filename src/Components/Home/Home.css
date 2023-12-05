@@ -173,5 +173,8 @@
         width: 22px;
         height: 22px;
     }
+    .home__content{
+        padding: 0 1rem;
+    }
    
 }
