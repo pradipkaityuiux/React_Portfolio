@@ -5,12 +5,14 @@
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
-    align-items: center;
+    /* align-items: flex-start; */
 }
 .home__social{
     display: grid;
     grid-template-columns: max-content;
     row-gap: 1rem;
+    align-items: center;
+    align-content: center;
 }
 .home__social-icon{
     font-size: 1.25rem;
@@ -50,7 +52,11 @@
 }
 
 .home__img{
-    background: url(../../assets/profile.jpg);
+    /* background: url(../../assets/Profile.png); */
+    /* background: url(../../assets/profileNew.png); */
+    background: url(../../assets/profilePicture.png);
+    /* background: url(../../assets/Profile.jpg); */
+    /* background: url(../../assets/ProfilePortfolio.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -58,7 +64,9 @@
     justify-self: center;
     width: 300px;
     height: 300px;
-    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+    color: rgb(255, 92, 160);
+    /* box-shadow: inset 0 0 0 6px rgb(255 255 255 / 60%), 0 0 0 6px rgb(0 0 0 / 10%), 0 0 8px 12px rgb(0 0 0/20%); */
+    box-shadow: inset 0 0 0 6px rgb(255 255 255 / 60%);
     animation: profile__animate 4s ease-in-out infinite 1s;
 }
 @keyframes profile__animate {
@@ -76,7 +84,28 @@
     }
 }
 .home__scroll{
+    display: flex;
+    /* margin-left: auto; */
+}
+.tech-stacks{
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-top: 5rem;
+}
+.home__scroll-button{
     margin-left: auto;
+}
+.tech-stacks img{
+    position: relative;
+    width: 6.4rem;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}
+.tech-stacks img:hover{
+    transform: translateY(-10px);
+    /* box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 .wheel{
     animation: scroll 2s ease infinite;
@@ -136,6 +165,10 @@
         order: initial;
         justify-self: initial;
     }
+    .tech-stacks{
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
     .home__data{
         grid-column: 2/3;
         max-width: 400px;
@@ -163,6 +196,13 @@
    .home__title{
     font-size: 2rem
    }
+   .tech-stacks{
+        margin-top: 3.2rem;
+    }
+   .tech-stacks img{
+        width: 5rem;
+        height: auto;
+    }
 }
 @media screen and (max-width: 350px) {
     .home__img{

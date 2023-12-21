@@ -1,4 +1,9 @@
 import React from 'react'
+import VueImg from "../../assets/Group.png"
+import FigmaImg from "../../assets/Group-1.png"
+import ReactImg from "../../assets/Group-2.png"
+import TailwinfImg from "../../assets/Group-3.png"
+import FirebaseImg from "../../assets/Group-4.png"
 
 function Data() {
   return (
@@ -72,6 +77,13 @@ function Data() {
             fill="#000"
             ></path>
         </svg></a>
+        <div className='tech-stacks'>
+        <img src={ReactImg} alt="" draggable='false' data-name="React"/>
+        <img src={VueImg} alt="" draggable='false' data-name="Vue"/>
+        <img src={TailwinfImg} alt="" draggable='false' data-name="Tailwind"/>
+        <img src={FirebaseImg} alt="" draggable='false' data-name="Firebase"/>
+        <img src={FigmaImg} alt="" draggable='false' data-name="Figma"/>
+      </div>
     </div>
   )
 }

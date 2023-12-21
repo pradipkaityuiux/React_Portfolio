@@ -36,6 +36,16 @@
     /* padding: 0 4rem 0 0; */
     margin-bottom: var(--mb-2-5);
 }
+.moreAboutMe{
+    color: var(--title-color);
+    margin-left: 1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px solid var(--title-color);
+    transition: all 0.1s ease-in-out;
+}
+.moreAboutMe:hover{
+    font-weight: 500;
+}
 @media screen and (max-width: 992px) {
     .about__container{
         grid-template-columns: 1fr;
