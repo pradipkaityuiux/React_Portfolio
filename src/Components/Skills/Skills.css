@@ -1,29 +1,41 @@
 .skills__container{
-    grid-template-columns: repeat(2,350px);
+    grid-template-columns: repeat(2,460px);
     column-gap: 3rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 .skills__content{
-    background-color: var(--container-color);
-    border: 1px solid rgba(00, 0, 0, 0.2);
+    /* background-color: var(--container-color); */
+    /* border: 1px solid rgba(00, 0, 0, 0.2); */
     padding: 2rem 4rem;
     border-radius: 1.25rem;
 }
-.skills__title{
+/* .skills__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     text-align: center;
     margin-bottom: var(--mb-1-5);
-}
+} */
 .skills__box{
     display: flex;
-    justify-content: center;
-    column-gap: 2.5rem;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 2.5rem;
 }
 .skills__group{
     display: grid;
+    grid-template-columns: auto 1fr;
     align-items: flex-start;
-    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.skills__group i{
+    font-size: 2.4rem;
+    background-color: #FFF;
+    padding: 0.6rem;
+    border-radius: 50% 20%;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.skills__each_name p{
+    font-size: var(--small-font-size);
 }
 .skills__data{
     display: flex;
@@ -64,4 +76,38 @@
     .skills__name{
         font-size: var(--small-font-size);
     }
+}
+
+.progress-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.progress {
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+    display: flex;
+    height: 0.4rem;
+    width: 100%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+.progress p{
+    position: absolute;
+    top: -1.5rem;
+}
+.progress p span{
+    font-size: var(--tiny-font-size);
+    margin-left: 0.6rem;
+}
+.progress-value {
+    border-radius: 50rem;
+    background: rgb(36,36,36);
+    background: linear-gradient(90deg, rgba(83,83,83,1) 0%, rgba(161,161,161,1) 78%);
+    height: 0.4rem;
+}
+.fade-in{
+    /* visibility: hidden; */
 }

@@ -10,6 +10,10 @@ import Skills from './Components/Skills/Skills'
 import Testimonials from './Components/Testimonials/Testimonials'
 import AppLayout from './AppLayout'
 import AboutMe from './Components/About/AboutMe'
+import Blog from './Components/Blog/Blog'
+import Portfolio from './Components/Portfolio/Portfolio'
+import DevPortfolio from "./Components/Portfolio/DevPortfolio"
+import DesignPortfolio from "./Components/Portfolio/DesignPortfolio"
 
 
 function App() {
@@ -24,13 +28,19 @@ function App() {
               <About/>
               <Skills/>
               {/* <Services/> */}
+              <Blog/>
               <Qualifications/>
-              <Testimonials/>
+              {/* <Testimonials/> */}
               <Contact/>
             </AppLayout>
             }>
           </Route>
           <Route path='/aboutme' element={<AboutMe/>}/>
+          <Route path='/portfolio' element={<Portfolio/>}>
+            <Route index element={<DevPortfolio/>}/>
+            <Route path='development' element={<DevPortfolio/>}/>
+            <Route path='uxdesign' element={<DesignPortfolio/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

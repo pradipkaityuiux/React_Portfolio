@@ -3,58 +3,38 @@ import React from 'react'
 function Frontend() {
   return (
     <div className="skills__content">
-        <h3 className="skills__title">Frontend Developer</h3>
         <div className="skills__box">
             <div className="skills__group">
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>HTML5</h3>
-                        <span className="skills__level">Basic</span>
-                    </div>
+                <i class='bx bx-trending-up'></i>
+                <div className='skills__each_name'>
+                    <h3>FAST</h3>
+                    <p>Fast Load times and Lag free interaction, my highest priority</p>
                 </div>
-
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>CSS3</h3>
-                        <span className="skills__level">Advanced</span>
-                    </div>
+            </div>
+            <div className="skills__group">
+                <i class='bx bx-devices'></i>
+                <div className='skills__each_name'>
+                    <h3>RESPONSIVE</h3>
+                    <p>My layouts will work on any device, big or small.</p>
                 </div>
-                
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>JavaScript</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
+            </div>
+            <div className="skills__group">
+                <i class='bx bx-bulb' ></i>
+                <div className='skills__each_name'>
+                    <h3>INTUITIVE</h3>
+                    <p>Stromg preferance for easy to use, intuitive UI/UX</p>
+                </div>
+            </div>
+            <div className="skills__group">
+                <i class='bx bx-rocket' ></i>
+                <div className='skills__each_name'>
+                    <h3>DYNAMIC</h3>
+                    <p>Websites don't have to be static, I love making pages come to life.</p>
                 </div>
             </div>
 
             <div className="skills__group">
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>Bootstrap</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>Git</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
-
-                <div className="skills__data">
-                    <i className='bx bx-badge-check'></i>
-                    <div>
-                        <h3 className='skills__name'>React</h3>
-                        <span className="skills__level">Intermediate</span>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

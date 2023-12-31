@@ -46,6 +46,11 @@
 .moreAboutMe:hover{
     font-weight: 500;
 }
+.animate-me {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.5s ease-in-out;
+}
 @media screen and (max-width: 992px) {
     .about__container{
         grid-template-columns: 1fr;

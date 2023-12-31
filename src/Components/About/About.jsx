@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import "./about.css"
 import AboutImg from "../../assets/profile-pic-about.png"
 import CV from "../../assets/John-Cv.pdf"
@@ -7,14 +7,44 @@ import { Link } from 'react-router-dom'
 
 
 function About() {
+    useEffect(() => {
+        // Target elements to be observed
+        const targetElements = document.querySelectorAll('.animate-me');
+
+        // Intersection Observer options
+        const options = {
+            root: null, // use the viewport as the root
+            rootMargin: '0px',
+            threshold: 0.8, // trigger when 60% of the element is visible
+        };
+        const handleIntersection = (entries, observer) => {
+            entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+                // entry.target.classList.add('fade-in'); // Add a class for additional styling/animation
+                observer.unobserve(entry.target);
+            }
+            });
+        };
+        const observer = new IntersectionObserver(handleIntersection, options);
+        targetElements.forEach((element) => {
+            observer.observe(element);
+        });
+        return () => {
+            targetElements.forEach((element) => {
+            observer.unobserve(element);
+            });
+        };
+    }, []);
   return (
     <section className='about section' id='about'>
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">My Introduction</span>
 
         <div className="about__container container grid">
-            <img src={AboutImg} alt="" className="about__img" />
-            <div className="about__data">
+            <img src={AboutImg} alt="" className="about__img animate-me" />
+            <div className="about__data animate-me">
                 <Info/>
                 <p className="about__description">👩‍💻 Frontend Developer | UI/UX Enthusiast
 Experienced Frontend Developer adept in HTML, CSS, Bootstrap, and Javascript. Proficient in Vue and React frameworks, with a proven track record of crafting seamless user interfaces. Skilled in translating design concepts into responsive and interactive web applications using Figma and various web frameworks.</p>

@@ -23,11 +23,14 @@ export default function Header() {
                         <li className="nav__item" onClick={()=>navigate('/')}>
                             <a href="#skills" className='nav__link'><i className="uil uil-file-alt nav__icon"></i> Skills</a>
                         </li>
-                        <li className="nav__item" onClick={()=>navigate('/')}>
+                        {/* <li className="nav__item" onClick={()=>navigate('/')}>
                             <a href="#services" className='nav__link'><i className="uil uil-briefcase nav__icon"></i> Services</a>
-                        </li>
+                        </li> */}
                         <li className="nav__item" onClick={()=>navigate('/')}>
-                            <a href="#portfolio" className='nav__link'><i className="uil uil-scenery nav__icon"></i> Portfolio</a>
+                            <a href="#blog" className='nav__link'><i class='bx bx-book-open nav__icon'></i> Blog</a>
+                        </li>
+                        <li className="nav__item">
+                            <Link className='nav__link' to={'/portfolio'}><i className="uil uil-scenery nav__icon"></i> Portfolio</Link>
                         </li>
                         <li className="nav__item" onClick={()=>navigate('/')}>
                             <a href="#contact" className='nav__link'><i className="uil uil-message nav__icon"></i> Contact</a>
