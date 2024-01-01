@@ -7,6 +7,9 @@ export const PortfolioContainer = styled.div`
   margin-block: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid #ebebeb;
+  @media screen and (max-width:666px){
+    grid-template-columns: 1fr;
+  }
 `
 export const Content = styled.div`
   display: flex;

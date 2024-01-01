@@ -8,7 +8,9 @@ import Full2 from "../../assets/Full2.jpg"
 
 import devPortfolio3 from "../../assets/Portfolio3.png"
 import Full3 from "../../assets/Full3.jpg"
+import Full5 from "../../assets/Full5.png"
 import devPortfolio4 from "../../assets/Portfolio4.png"
+import devPortfolio5 from "../../assets/Portfolio5.png"
 import PortfolioContent from './PortfolioContent'
 
 
@@ -106,6 +108,28 @@ export default function DevPortfolio() {
       ],
       webUrl: "https://uiassembly.org/",
       githubLink: "#"
+    },
+    {
+      id: 5,
+      image: devPortfolio5,
+      imageHover: Full5,
+      duration: 0,
+      title: "MovieLand - Search Movies",
+      description: "The MovieLand app was an exciting project for me because it helps me to understand how to fetch external data using useEffect hook and manage state update and handling errors.",
+      techStack: [
+        {
+          id: 1,
+          tech: 'React',
+          color: '#00D9FE'
+        },
+        {
+          id: 2,
+          tech: 'OMDB Api',
+          color: '#ff2353'
+        },
+      ],
+      webUrl: "https://moovie-react.netlify.app/",
+      githubLink: "https://github.com/pradipkaityuiux/movie-react"
     },
   ];
   return (

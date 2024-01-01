@@ -48,6 +48,17 @@ export default function PortfolioContent({portfolio, hasCaseStudy}) {
         "I can now build apps that let you click around and explore different pages without any jarring reloads, making for a super <span>intuitive and user-friendly experience.</span> ✨",
       ]
     },
+    {
+      id: 5,
+      learning:[
+        "Constructing the project provided a hands-on experience in creating efficient <span>Single Page Applications (SPAs)</span> using the React library. This involved understanding the virtual DOM, component architecture, and the reactivity that makes React so powerful.",
+        "Utilizing the <span>useEffect hook</span>, I acquired the skills to seamlessly fetch external data. This asynchronous capability enhances the application's ability to dynamically update content, ensuring a real-time and responsive user experience.",
+        "Learning to manage errors became an integral part of the project. I honed the ability to handle unexpected scenarios gracefully, <span>implementing error boundaries</span> and ensuring a more robust and user-friendly application.",
+        "The project emphasized the importance of <span>managing loading states</span> during data retrieval. I implemented loading indicators to enhance the user experience, ensuring users are informed during data fetching processes.✨",
+        "Ensuring that data updates are <span>synchronized with the UI</span> was a key learning. The useEffect hook played a crucial role in orchestrating the flow of data to maintain consistency and coherence in the application's UI.",
+        "Storing data in <span>local storage</span> for future use was a valuable skill acquired. This not only improves performance by reducing the need for repeated data fetching but also provides a seamless offline user experience."
+      ]
+    },
   ]
   return (
     <PortfolioContainer className='portfolio_container'>
