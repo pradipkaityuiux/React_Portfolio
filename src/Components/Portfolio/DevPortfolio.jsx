@@ -8,6 +8,7 @@ import Full2 from "../../assets/Full2.jpg"
 
 import devPortfolio3 from "../../assets/Portfolio3.png"
 import Full3 from "../../assets/Full3.jpg"
+import Full4 from "../../assets/Full4.png"
 import Full5 from "../../assets/Full5.png"
 import devPortfolio4 from "../../assets/Portfolio4.png"
 import devPortfolio5 from "../../assets/Portfolio5.png"
@@ -95,8 +96,8 @@ export default function DevPortfolio() {
     {
       id: 4,
       image: devPortfolio4,
-      imageHover: "",
-      duration: 0,
+      imageHover: Full4,
+      duration: 5,
       title: "The React Quiz App",
       description: "The React Quiz app was super helpful! It simplified state management by showing how to use the useReducer Hook instead of many useState hooks. Now, I can build more efficient React components!",
       techStack: [
@@ -104,10 +105,15 @@ export default function DevPortfolio() {
           id: 1,
           tech: 'React',
           color: '#00D9FE'
-        }
+        },
+        {
+          id: 2,
+          tech: 'Firebase',
+          color: '#FFA713'
+        },
       ],
-      webUrl: "https://uiassembly.org/",
-      githubLink: "#"
+      webUrl: "https://quizplay-react.web.app/",
+      githubLink: "https://github.com/pradipkaityuiux/react-quiz"
     },
     {
       id: 5,

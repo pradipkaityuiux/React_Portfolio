@@ -19,6 +19,10 @@
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
+.nav__logo img{
+    width: 12rem;
+    height: auto;
+}
 .nav__list{
     display: flex;
     column-gap: 2rem;

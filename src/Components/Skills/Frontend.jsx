@@ -22,7 +22,7 @@ function Frontend() {
                 <i class='bx bx-bulb' ></i>
                 <div className='skills__each_name'>
                     <h3>INTUITIVE</h3>
-                    <p>Stromg preferance for easy to use, intuitive UI/UX</p>
+                    <p>Strong preference for easy to use, intuitive UI/UX</p>
                 </div>
             </div>
             <div className="skills__group">

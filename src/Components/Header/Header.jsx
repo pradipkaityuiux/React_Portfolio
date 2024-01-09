@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./Header.css"
+import Logo from "../../assets/Logo.png"
 import { Link, useNavigate } from 'react-router-dom';
 
 export default function Header() {
@@ -10,7 +11,7 @@ export default function Header() {
     <div>
         <header className="header">
             <nav className="nav container">
-                <Link to={`/`} className="nav__logo">Smith</Link>
+                <Link to={'/'} className="nav__logo"><img src={Logo} alt="" /></Link>
                 {/* <a href="index.html" className="nav__logo">Smith</a> */}
                 <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className='nav__list grid'>

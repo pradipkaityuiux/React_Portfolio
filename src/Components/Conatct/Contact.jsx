@@ -27,7 +27,7 @@ function Contact() {
                     <div className="contact__card">
                         <div className="bx bx-mail-send contact__card-icon"></div>
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">kaity.contact@gmail.com</span>
+                        <span className="contact__card-data">pradipforofficial@gmail.com</span>
 
                         <a href="mailto:kaity.contact@gmail.com" className="contact__button">Write Me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div>
@@ -35,9 +35,9 @@ function Contact() {
                     <div className="contact__card">
                         <div className="bx bxl-whatsapp contact__card-icon"></div>
                         <h3 className="contact__card-title">WhatsApp</h3>
-                        <span className="contact__card-data">+91-8415861854</span>
+                        <span className="contact__card-data">+91-8348025571</span>
 
-                        <a href="https://api.whatsapp.com/send?phone=8458965125&text=Hello,more information!" className="contact__button">Write Me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=8348025571&text=Hello,more information!" className="contact__button">Write Me <i className='bx bx-right-arrow-alt contact__button-icon'></i></a>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import "./about.css"
 import AboutImg from "../../assets/profile-pic-about.png"
-import CV from "../../assets/John-Cv.pdf"
+import CV from "../../assets/Resume-pradip.pdf"
 import Info from './Info'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom' 
 
 
 function About() {
@@ -75,7 +75,7 @@ Experienced Frontend Developer adept in HTML, CSS, Bootstrap, and Javascript. Pr
                     ></path>
                     </svg>
                 </a>
-                <Link className='moreAboutMe' to={`/aboutme`}>More About Me</Link>
+                {/* <Link className='moreAboutMe' to={`/aboutme`}>More About Me</Link> */}
             </div>
         </div>
     </section>

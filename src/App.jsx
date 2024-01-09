@@ -14,6 +14,7 @@ import Blog from './Components/Blog/Blog'
 import Portfolio from './Components/Portfolio/Portfolio'
 import DevPortfolio from "./Components/Portfolio/DevPortfolio"
 import DesignPortfolio from "./Components/Portfolio/DesignPortfolio"
+import Footer from './Components/Footer/Footer'
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path='uxdesign' element={<DesignPortfolio/>}/>
           </Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   )

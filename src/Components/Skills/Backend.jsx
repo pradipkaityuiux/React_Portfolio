@@ -78,11 +78,11 @@ function Backend() {
             skill: 'Github',
             percent: 65
         },
-        {
-            id: 9,
-            skill: 'Next Js',
-            percent: 85
-        },
+        // {
+        //     id: 9,
+        //     skill: 'Next Js',
+        //     percent: 85
+        // },
         {
             id: 10,
             skill: 'UI Design',
