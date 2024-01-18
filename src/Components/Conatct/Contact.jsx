@@ -1,18 +1,24 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css"
+import toast from 'react-hot-toast';
 
 function Contact() {
   const form = useRef();
+  const [disable, setDisable] = useState(false)
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setDisable(true)
 
     emailjs.sendForm('service_ge0h275', 'template_z8c13es', form.current, 'vO_OExGie00pilRCr')
       .then((result) => {
-          console.log(result.text);
+          toast.success("Thank you for reaching out😃")
+          e.target.reset();
+          setDisable(false)
       }, (error) => {
-          console.log(error.text);
+          toast.error("Facing some Technical issues...");
+          setDisable(false)
       });
   };
   return (
@@ -56,7 +62,7 @@ function Contact() {
                         <label htmlFor="project" className='contact__form-tag'>Project</label>
                         <textarea name="project" id="project" cols="30" rows="10" className='contact__form-input' placeholder='Brief about Project' required></textarea>
                     </div>
-                    <button className="button button--flex" type='submit'>Send Message
+                    <button className="button button--flex" type='submit' disabled={disable}>Send Message
                     <svg
                         class="button__icon"
                         xmlns="http://www.w3.org/2000/svg"

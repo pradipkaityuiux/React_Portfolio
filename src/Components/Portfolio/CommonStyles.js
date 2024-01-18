@@ -67,6 +67,9 @@ export const Chips = styled.p`
   display: inline-block;
   padding: 0.2rem 0.6rem;
   border-radius: 5rem;
+  background-color: #FFF;
+  border: 0.5px solid;
+  box-shadow: 0 2px 0 0 ${props => props.border ? props.border : ''};
 `
 export const LinkContainer = styled.div`
   margin-top: auto;
@@ -103,11 +106,11 @@ export const Github = styled.a`
 `
 export const Book = styled.span`
   background-color: #ffffff;
-  padding: 0.2rem 0.4rem 0.2rem;
+  padding: 0.3rem 0.5rem 0.1rem;;
   box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 50%;
   cursor: pointer;
-  &>i{
+  &>svg{
     font-size: 1.4rem;
     margin-top: 3px;
     color: #264EE4;

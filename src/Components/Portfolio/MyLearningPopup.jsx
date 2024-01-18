@@ -2,12 +2,13 @@ import React from 'react';
 import Popup from 'reactjs-popup';
 import "./Portfolio.css"
 import { Book } from './CommonStyles';
+import { VscBook } from "react-icons/vsc";
 // https://jarocki.me/about
 
 export default function MyLearningPopup({content}) {
   return (
     <Popup
-    trigger={<Book><i class='bx bx-book-bookmark'></i></Book>}
+    trigger={<Book><VscBook/></Book>}
     modal
     nested
   >

@@ -1,6 +1,7 @@
 import React from 'react'
 import { PortfolioContainer, Content, ImageContainer, Title, Description, Image, ImageHover, ChipsContainer, Chips, LinkContainer, StyledLink, Github, Book, Casestudy } from './CommonStyles'
 import MyLearningPopup from './MyLearningPopup'
+import { VscBook } from "react-icons/vsc";
 import "./Portfolio.css"
 
 export default function PortfolioContent({portfolio, hasCaseStudy}) {
@@ -59,6 +60,17 @@ export default function PortfolioContent({portfolio, hasCaseStudy}) {
         "Storing data in <span>local storage</span> for future use was a valuable skill acquired. This not only improves performance by reducing the need for repeated data fetching but also provides a seamless offline user experience."
       ]
     },
+    {
+      id: 6,
+      learning:[
+        "Building the project provided a hands-on experience in utilizing <span>React Query</span> to efficiently handle fetching external data and storing them in the cache for a performance boost. This involved understanding the virtual DOM, component architecture, and the reactivity that makes React so powerful.",
+        "Learning to <span>manage errors</span> became an integral part of the project. I honed the ability to handle unexpected scenarios gracefully, implementing error boundaries and ensuring a more robust and user-friendly application.",
+        "The project emphasized the importance of <span>managing loading states</span> during data retrieval. I implemented loading indicators to enhance the user experience, ensuring users are informed during data fetching processes.✨",
+        "Ensuring that data updates are <span>synchronized with the UI</span> was a key learning.",
+        "Building a <span>Firebase database</span> for storing data and fetching through APIs was a significant aspect of the project, contributing to a comprehensive understanding of data management and connectivity.",
+        "In addition, using <span>Redux</span> for handling complex state management and syncing with the UI provided valuable insights into maintaining a scalable and organized application structure.",
+      ]
+    },
   ]
   return (
     <PortfolioContainer className='portfolio_container'>
@@ -69,12 +81,12 @@ export default function PortfolioContent({portfolio, hasCaseStudy}) {
         <Content>
           <Title>{portfolio.title}</Title>
           <Description>{portfolio.description}</Description>
-          <ChipsContainer>{portfolio.techStack.map(tech => <Chips style={{backgroundColor: tech.color}}>{tech.tech}</Chips>)}</ChipsContainer>
+          <ChipsContainer>{portfolio.techStack.map(tech => <Chips border={tech.color} style={{color: tech.color, borderColor: tech.color}}>{tech.tech}</Chips>)}</ChipsContainer>
           <LinkContainer>
             {!hasCaseStudy ? <StyledLink href={portfolio.webUrl} target='_blank'>View Website<i class='bx bx-link-external'></i></StyledLink> : <Casestudy as='a'>Case Study</Casestudy>}
             {portfolio.githubLink !='' ? <Github href={portfolio.githubLink} target='_blank'><i class='bx bxl-github'></i></Github> : null}
             {/* {!hasCaseStudy ? <Book><i class='bx bx-book-bookmark'></i></Book> : <Book><i class='bx bx-link-external'></i></Book>} */}
-            {!hasCaseStudy ? <MyLearningPopup content={myLearning[portfolio.id-1]}/> : <Book><i class='bx bx-link-external'></i></Book>}
+            {!hasCaseStudy ? <MyLearningPopup content={myLearning[portfolio.id-1]}/> : <Book><VscBook/></Book>}
           </LinkContainer>
         </Content>
       </PortfolioContainer>

@@ -10,8 +10,10 @@ import devPortfolio3 from "../../assets/Portfolio3.png"
 import Full3 from "../../assets/Full3.jpg"
 import Full4 from "../../assets/Full4.png"
 import Full5 from "../../assets/Full5.png"
+import Full6 from "../../assets/Full6.png"
 import devPortfolio4 from "../../assets/Portfolio4.png"
 import devPortfolio5 from "../../assets/Portfolio5.png"
+import devPortfolio6 from "../../assets/Portfolio6.png"
 import PortfolioContent from './PortfolioContent'
 
 
@@ -136,6 +138,38 @@ export default function DevPortfolio() {
       ],
       webUrl: "https://moovie-react.netlify.app/",
       githubLink: "https://github.com/pradipkaityuiux/movie-react"
+    },
+    {
+      id: 6,
+      image: devPortfolio6,
+      imageHover: Full6,
+      duration: 14,
+      title: "DeverX Blog - Write Your Creative Dev Articles",
+      description: "The DeverX Blog - helped me to understand the React Query to fetch External Data, store in cache, the Redux State management to handle various complex operations.",
+      techStack: [
+        {
+          id: 1,
+          tech: 'React',
+          color: '#00D9FE'
+        },
+        {
+          id: 2,
+          tech: 'React Query',
+          color: '#ff2509'
+        },
+        {
+          id: 3,
+          tech: 'Redux',
+          color: '#2370ff'
+        },
+        {
+          id: 2,
+          tech: 'Firebase',
+          color: '#FFA713'
+        },
+      ],
+      webUrl: "https://deverxblog.netlify.app/",
+      githubLink: "https://github.com/pradipkaityuiux/deverx"
     },
   ];
   return (

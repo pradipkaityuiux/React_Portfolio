@@ -30,11 +30,11 @@ export default function Header() {
                         <li className="nav__item" onClick={()=>navigate('/')}>
                             <a href="#blog" className='nav__link'><i class='bx bx-book-open nav__icon'></i> Blog</a>
                         </li>
-                        <li className="nav__item">
-                            <Link className='nav__link' to={'/portfolio'}><i className="uil uil-scenery nav__icon"></i> Portfolio</Link>
-                        </li>
                         <li className="nav__item" onClick={()=>navigate('/')}>
                             <a href="#contact" className='nav__link'><i className="uil uil-message nav__icon"></i> Contact</a>
+                        </li>
+                        <li className="nav__item">
+                            <Link className='nav__link portfolio_link' to={'/portfolio'}><i className="uil uil-scenery nav__icon"></i> Portfolio</Link>
                         </li>
                     </ul>
                     <i className="uil uil-times nav__close" onClick={()=>showMenu(!toggle)}></i>

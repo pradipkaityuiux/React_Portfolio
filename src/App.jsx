@@ -15,6 +15,7 @@ import Portfolio from './Components/Portfolio/Portfolio'
 import DevPortfolio from "./Components/Portfolio/DevPortfolio"
 import DesignPortfolio from "./Components/Portfolio/DesignPortfolio"
 import Footer from './Components/Footer/Footer'
+import toast, { Toaster } from 'react-hot-toast'
 
 
 function App() {
@@ -43,6 +44,19 @@ function App() {
             <Route path='uxdesign' element={<DesignPortfolio/>}/>
           </Route>
         </Routes>
+        <Toaster position='top-center' gutter={12} containerStyle={{margin: '8px'}} toastOptions={{
+          success:{
+            duration: 3000
+          },error:{
+            duration: 5000
+          },style:{
+            fontSize: "16px",
+            maxWidth: "400px",
+            padding: "16px 24px",
+            backgroundColor: "#FFF",
+            color: "#374151"
+          }
+        }}/>
         <Footer/>
       </BrowserRouter>
     </>

@@ -127,6 +127,10 @@ img{
     border-radius: 1rem;
     font-weight: var(--font-medium);
 }
+.button:disabled{
+    opacity: 0.7;
+    pointer-events: none;
+}
 .button:hover{
     background-color: var(--title-color-dark);
 }
