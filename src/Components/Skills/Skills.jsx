@@ -2,10 +2,11 @@ import React from 'react'
 import "./skills.css"
 import Frontend from './Frontend'
 import Backend from './Backend.Jsx'
+import Section from '../../hooks/CommonSec'
 
 function Skills() {
   return (
-    <section className="skills section" id="skills">
+    <Section className="skills section" id="skills">
         <h2 className="section__title">Skills</h2>
         <span className="section__subtitle">My Technical Level</span>
 
@@ -13,7 +14,7 @@ function Skills() {
             <Frontend/>
             <Backend/>
         </div>
-    </section>
+    </Section>
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Blog.css"
+import Section from '../../hooks/CommonSec'
 const blogs = [
     {
         id: 1,
@@ -52,7 +53,7 @@ const blogs = [
 ]
 function Blog() {
   return (
-    <section className="skills section" id="blog">
+    <Section className="skills section" id="blog">
         <h2 className="section__title">Blog</h2>
         <span className="section__subtitle">Technical Blog Articles</span>
 
@@ -67,7 +68,7 @@ function Blog() {
         <div className='all__blogs'>
             <a href="https://medium.com/@pradipkaity" target='_blank' className="button button--flex">Visit My Blog</a>
         </div>
-    </section>
+    </Section>
   )
 }
 

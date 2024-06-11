@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css"
 import toast from 'react-hot-toast';
+import Section from '../../hooks/CommonSec';
 
 function Contact() {
   const form = useRef();
@@ -22,7 +23,7 @@ function Contact() {
       });
   };
   return (
-    <section className="contact section" id="contact">
+    <Section className="contact section" id="contact">
         <h2 className="section__title">Contact</h2>
         <span className="section__subtitle">Get in Touch</span>
 
@@ -83,7 +84,7 @@ function Contact() {
                 </form>
             </div>
         </div>
-    </section>
+    </Section>
   )
 }
 

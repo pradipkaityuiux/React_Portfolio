@@ -3,6 +3,7 @@ import { PortfolioContainer, Content, ImageContainer, Title, Description, Image,
 import MyLearningPopup from './MyLearningPopup'
 import { VscBook } from "react-icons/vsc";
 import "./Portfolio.css"
+import Section from '../../hooks/CommonSec';
 
 export default function PortfolioContent({portfolio, hasCaseStudy}) {
   const myLearning = [
@@ -73,22 +74,24 @@ export default function PortfolioContent({portfolio, hasCaseStudy}) {
     },
   ]
   return (
-    <PortfolioContainer className='portfolio_container'>
-        <ImageContainer className='imageContent'>
-          <Image src={portfolio.image} alt="" draggable='false' className='imageTop'/>
-          <ImageHover src={portfolio.imageHover} alt="" duration={portfolio.duration} className='imageHover'/>
-        </ImageContainer>
-        <Content>
-          <Title>{portfolio.title}</Title>
-          <Description>{portfolio.description}</Description>
-          <ChipsContainer>{portfolio.techStack.map(tech => <Chips border={tech.color} style={{color: tech.color, borderColor: tech.color}}>{tech.tech}</Chips>)}</ChipsContainer>
-          <LinkContainer>
-            {!hasCaseStudy ? <StyledLink href={portfolio.webUrl} target='_blank'>View Website<i class='bx bx-link-external'></i></StyledLink> : <Casestudy as='a'>Case Study</Casestudy>}
-            {portfolio.githubLink !='' ? <Github href={portfolio.githubLink} target='_blank'><i class='bx bxl-github'></i></Github> : null}
-            {/* {!hasCaseStudy ? <Book><i class='bx bx-book-bookmark'></i></Book> : <Book><i class='bx bx-link-external'></i></Book>} */}
-            {!hasCaseStudy ? <MyLearningPopup content={myLearning[portfolio.id-1]}/> : <Book><VscBook/></Book>}
-          </LinkContainer>
-        </Content>
-      </PortfolioContainer>
+    <Section>
+      <PortfolioContainer className='portfolio_container'>
+          <ImageContainer className='imageContent'>
+            <Image src={portfolio.image} alt="" draggable='false' className='imageTop'/>
+            <ImageHover src={portfolio.imageHover} alt="" duration={portfolio.duration} className='imageHover'/>
+          </ImageContainer>
+          <Content>
+            <Title>{portfolio.title}</Title>
+            <Description>{portfolio.description}</Description>
+            <ChipsContainer>{portfolio.techStack.map(tech => <Chips border={tech.color} style={{color: tech.color, borderColor: tech.color}}>{tech.tech}</Chips>)}</ChipsContainer>
+            <LinkContainer>
+              {!hasCaseStudy ? <StyledLink href={portfolio.webUrl} target='_blank'>View Website<i class='bx bx-link-external'></i></StyledLink> : <Casestudy as='a'>Case Study</Casestudy>}
+              {portfolio.githubLink !='' ? <Github href={portfolio.githubLink} target='_blank'><i class='bx bxl-github'></i></Github> : null}
+              {/* {!hasCaseStudy ? <Book><i class='bx bx-book-bookmark'></i></Book> : <Book><i class='bx bx-link-external'></i></Book>} */}
+              {!hasCaseStudy ? <MyLearningPopup content={myLearning[portfolio.id-1]}/> : <Book><VscBook/></Book>}
+            </LinkContainer>
+          </Content>
+        </PortfolioContainer>
+      </Section>
   )
 }

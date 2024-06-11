@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./Qualifications.css"
+import Section from '../../hooks/CommonSec';
 
 function Qualifications() {
     const [ toggleState, setToggleState] = useState(1);
@@ -7,7 +8,7 @@ function Qualifications() {
         setToggleState(index)
     }
   return (
-    <section className="qualification section">
+    <Section className="qualification section">
         <h2 className="section__title">Qualifications</h2>
         <span className="section__subtitle">My Personal Journey</span>
 
@@ -125,7 +126,7 @@ function Qualifications() {
                 </div>
             </div>
         </div>
-    </section>
+    </Section>
   )
 }
 

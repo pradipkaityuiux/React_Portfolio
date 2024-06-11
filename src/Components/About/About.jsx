@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import "./about.css"
 import AboutImg from "../../assets/profile-pic-about.png"
-import CV from "../../assets/PradipKaity Resume.pdf"
+import CV from "../../assets/Pradip_Kaity_Resume002.pdf"
 import Info from './Info'
 import { Link } from 'react-router-dom' 
 

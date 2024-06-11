@@ -4,10 +4,11 @@ import FigmaImg from "../../assets/Group-1.png"
 import ReactImg from "../../assets/Group-2.png"
 import TailwinfImg from "../../assets/Group-3.png"
 import FirebaseImg from "../../assets/Group-4.png"
+import Section from '../../hooks/CommonSec'
 
 function Data() {
   return (
-    <div className="home__data">
+    <Section className="home__data">
         <h1 className="home__title">Pradip Kaity <svg
             width="36"
             height="36"
@@ -84,7 +85,7 @@ function Data() {
         <img src={FirebaseImg} alt="" draggable='false' data-name="Firebase"/>
         <img src={FigmaImg} alt="" draggable='false' data-name="Figma"/>
       </div>
-    </div>
+    </Section>
   )
 }
 

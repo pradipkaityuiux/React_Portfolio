@@ -1,8 +1,9 @@
 import React from 'react'
+import Section from '../../hooks/CommonSec'
 
 function Frontend() {
   return (
-    <div className="skills__content">
+    <Section className="skills__content">
         <div className="skills__box">
             <div className="skills__group">
                 <i class='bx bx-trending-up'></i>
@@ -37,7 +38,7 @@ function Frontend() {
                 
             </div>
         </div>
-    </div>
+    </Section>
   )
 }
 
